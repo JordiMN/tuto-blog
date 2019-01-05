@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container-fuid">
+    <div class="navbar-collapse">
+      <a routerLink="posts" class="navbar-brand">{{brand}}</a>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="posts">Posts</a> </li>
+        <li routerLinkActive="active"><a routerLink="new">Nouveau post</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

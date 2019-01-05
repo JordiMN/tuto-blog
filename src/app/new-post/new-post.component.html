@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-4 col-xs-offset-3">
+    <form (submit)="onSubmit()" [formGroup]="postForm">
+      <div class="form-group">
+        <label for="title">Titre</label>
+        <input type="text" id="title" class="form-control" formControlName="title">
+      </div>
+
+      <div class="form-group">
+        <label for="content">Contenu</label>
+        <textarea id="content" class="form-control" formControlName="content">
+        </textarea>
+      </div>
+
+      <button type="submit" class="btn btn-default" [disabled]="postForm.invalid">Enregistrer</button>
+    </form>
+  </div>
+</div>
