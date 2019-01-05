@@ -38,10 +38,8 @@ export class PostsService {
   }
 
   addPost(post : PostItem){
-    console.log(post);
     this.posts.push(post);
     this.setServerPostList();
-    console.log(this.posts);
   }
 
   toggleLove(search: PostItem, newLove : number){

@@ -29,7 +29,6 @@ export class NewPostComponent implements OnInit {
 
   onSubmit(){
     const values = this.postForm.value;
-    console.log(new PostItem("test", "test"));
     this.postService.addPost(new PostItem(values["title"], values["content"]));
     this.router.navigate(["/posts"]);
   }
